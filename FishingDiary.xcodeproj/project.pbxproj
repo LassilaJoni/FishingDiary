@@ -13,6 +13,10 @@
 		357F27592899025A00A4DAF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357F27582899025A00A4DAF1 /* Preview Assets.xcassets */; };
 		357F275B2899025A00A4DAF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F275A2899025A00A4DAF1 /* Persistence.swift */; };
 		357F275E2899025A00A4DAF1 /* FishingDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 357F275C2899025A00A4DAF1 /* FishingDiary.xcdatamodeld */; };
+		357F276C2899071B00A4DAF1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F276B2899071B00A4DAF1 /* Constant.swift */; };
+		357F277028990D4D00A4DAF1 /* AddFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F276F28990D4D00A4DAF1 /* AddFishView.swift */; };
+		357F277228990F3100A4DAF1 /* FishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F277128990F3100A4DAF1 /* FishDetailView.swift */; };
+		357F27742899202800A4DAF1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F27732899202800A4DAF1 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		357F27582899025A00A4DAF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		357F275A2899025A00A4DAF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		357F275D2899025A00A4DAF1 /* FishingDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishingDiary.xcdatamodel; sourceTree = "<group>"; };
+		357F276B2899071B00A4DAF1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		357F276F28990D4D00A4DAF1 /* AddFishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishView.swift; sourceTree = "<group>"; };
+		357F277128990F3100A4DAF1 /* FishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailView.swift; sourceTree = "<group>"; };
+		357F27732899202800A4DAF1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,11 @@
 		357F27502899025200A4DAF1 /* FishingDiary */ = {
 			isa = PBXGroup;
 			children = (
+				357F276A2899070C00A4DAF1 /* Utility */,
+				357F2765289902C500A4DAF1 /* View */,
+				357F27642899027000A4DAF1 /* Model */,
 				357F27512899025200A4DAF1 /* FishingDiaryApp.swift */,
-				357F27532899025200A4DAF1 /* ContentView.swift */,
 				357F27552899025A00A4DAF1 /* Assets.xcassets */,
-				357F275A2899025A00A4DAF1 /* Persistence.swift */,
-				357F275C2899025A00A4DAF1 /* FishingDiary.xcdatamodeld */,
 				357F27572899025A00A4DAF1 /* Preview Content */,
 			);
 			path = FishingDiary;
@@ -71,6 +79,34 @@
 				357F27582899025A00A4DAF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		357F27642899027000A4DAF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				357F275A2899025A00A4DAF1 /* Persistence.swift */,
+				357F275C2899025A00A4DAF1 /* FishingDiary.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		357F2765289902C500A4DAF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				357F27532899025200A4DAF1 /* ContentView.swift */,
+				357F276F28990D4D00A4DAF1 /* AddFishView.swift */,
+				357F277128990F3100A4DAF1 /* FishDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		357F276A2899070C00A4DAF1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				357F276B2899071B00A4DAF1 /* Constant.swift */,
+				357F27732899202800A4DAF1 /* ImagePicker.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +181,12 @@
 			files = (
 				357F275B2899025A00A4DAF1 /* Persistence.swift in Sources */,
 				357F27542899025200A4DAF1 /* ContentView.swift in Sources */,
+				357F277028990D4D00A4DAF1 /* AddFishView.swift in Sources */,
+				357F276C2899071B00A4DAF1 /* Constant.swift in Sources */,
 				357F275E2899025A00A4DAF1 /* FishingDiary.xcdatamodeld in Sources */,
+				357F27742899202800A4DAF1 /* ImagePicker.swift in Sources */,
 				357F27522899025200A4DAF1 /* FishingDiaryApp.swift in Sources */,
+				357F277228990F3100A4DAF1 /* FishDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +318,11 @@
 				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "FishingDiary requires access to your phone’s camera.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,9 +349,11 @@
 				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "FishingDiary requires access to your phone’s camera.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
